@@ -1,5 +1,5 @@
 # daisy
-a minimalistic daily tasks schedular
+a minimalistic daily task schedular
 
 
 
