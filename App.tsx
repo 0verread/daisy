@@ -2,9 +2,15 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Header from './src/components/Header';
 
+import ZeroTasks from './src/screens/ZeroTasks';
+
 export default function App() {
   return (
-    <Header />
+    <>
+      <Header />
+      <ZeroTasks></ZeroTasks>
+    </>
+
     // <View style={styles.container}>
     //   <Text style={styles.name}>daisy</Text>
     //   <Text>make your today easy</Text>
