@@ -11,10 +11,6 @@ export default function App() {
       <ZeroTasks></ZeroTasks>
     </>
 
-    // <View style={styles.container}>
-    //   <Text style={styles.name}>daisy</Text>
-    //   <Text>make your today easy</Text>
-    // </View>
   );
 }
 
