@@ -7,10 +7,10 @@ type TaskProps = {
   active: true
 }
 
-const TaskItem = (props: any) => {
+const TaskItem = (tasks: any) => {
   return(
     <View style={taskItemStyles.todoContainer}>
-      <Text style={taskItemStyles.todoTitle}>{props.item.name}</Text>
+      <Text style={taskItemStyles.todoTitle}>{tasks.item.name}</Text>
     </View>
   )
 }
