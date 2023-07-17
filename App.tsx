@@ -1,14 +1,18 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+// components
 import Header from './src/components/Header';
 
+// screens
 import ZeroTasks from './src/screens/ZeroTasks';
+import Tasks from './src/screens/Tasks';
 
 export default function App() {
   return (
     <>
       <Header />
-      <ZeroTasks></ZeroTasks>
+      <Tasks></Tasks>
+      {/* <ZeroTasks></ZeroTasks> */}
     </>
 
   );

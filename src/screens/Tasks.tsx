@@ -1,5 +1,6 @@
 import React from "react";
-import { View, TouchableOpacity, StyleSheet, Text } from "react-native";
+import { View, TouchableOpacity, StyleSheet, Text, FlatList } from "react-native";
+import TaskItem from "../components/TaskItem";
 
 
 type TaskProps = {
@@ -7,16 +8,20 @@ type TaskProps = {
   text: string
 }
 
-const Tasks = ({ onDelete, text}: TaskProps) => {
+const data = [
+  {_id: 1, name: "task1", active: true},
+  {_id: 2, name: "task1", active: true},
+  {_id: 3, name: "task1", active: true}
+]
+
+const Tasks = () => {
   return(
     <View style={styles.container}>
-      <View style={styles.innerContainer}>
-        <Text style={styles.taskText}>{text}</Text>
-        <TouchableOpacity onPress={onDelete}>
-          delete
-        </TouchableOpacity>
-      </View>
-    </View>
+      <FlatList
+      data={data}
+      renderItem={TaskItem}
+      />
+  </View>
   )
 }
 
@@ -43,3 +48,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 })
+
+export default Tasks;
+
