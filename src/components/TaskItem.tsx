@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 type TaskProps = {
   _id: number,
@@ -9,9 +9,13 @@ type TaskProps = {
 
 const TaskItem = (tasks: any) => {
   return(
-    <View style={taskItemStyles.todoContainer}>
-      <Text style={taskItemStyles.todoTitle}>{tasks.item.name}</Text>
-    </View>
+		<TouchableOpacity>
+    	<View style={taskItemStyles.todoContainer}>
+				
+					<Text>{tasks.item.name}</Text>
+    	</View>
+		</TouchableOpacity>
+
   )
 }
 
@@ -20,14 +24,16 @@ const taskItemStyles = StyleSheet.create({
 		flexDirection: "row",
 		justifyContent: "space-between",
 		backgroundColor: "#E5E4E2",
-		padding: 15,
+		padding: 14,
 		borderRadius: 10,
 		marginBottom: 10,
+		borderColor: "black",
+		borderWidth: 1
 	},
 	todoTitle: {
-		fontWeight: "bold",
+		fontWeight: "normal",
 		fontSize: 18,
-		marginBottom: 8,
+		// marginBottom: 8,
 	},
 })
 

@@ -9,19 +9,19 @@ type TaskProps = {
 }
 
 const data = [
-  {_id: 1, name: "task1", active: true},
-  {_id: 2, name: "task1", active: true},
+  {_id: 1, name: "Something do", active: true},
+  {_id: 2, name: "do Something", active: true},
   {_id: 3, name: "task1", active: true}
 ]
 
 const Tasks = () => {
   return(
-    <View style={styles.container}>
-      <FlatList
-      data={data}
-      renderItem={TaskItem}
-      />
-  </View>
+      <View style={styles.container}>
+        <FlatList
+        data={data}
+        renderItem={TaskItem}
+        />
+    </View>
   )
 }
 
@@ -30,8 +30,6 @@ const styles = StyleSheet.create({
     marginHorizontal: "5%",
     paddingVertical: 12,
     paddingRight: 3,
-    borderBottomWidth: 1,
-    borderColor: "#E9EDF2",
   },
   taskText: {
     fontSize: 16,
