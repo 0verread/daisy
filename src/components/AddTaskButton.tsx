@@ -1,10 +1,10 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
 
 export default function AddTaskButton(){
   return(
     <View>
-      <Text>Add Task</Text>
+      <Button title="add"/>
     </View>
   )
 }

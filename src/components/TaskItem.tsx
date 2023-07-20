@@ -11,8 +11,7 @@ const TaskItem = (tasks: any) => {
   return(
 		<TouchableOpacity>
     	<View style={taskItemStyles.todoContainer}>
-				
-					<Text>{tasks.item.name}</Text>
+				<Text>{tasks.item.name}</Text>
     	</View>
 		</TouchableOpacity>
 
@@ -33,7 +32,6 @@ const taskItemStyles = StyleSheet.create({
 	todoTitle: {
 		fontWeight: "normal",
 		fontSize: 18,
-		// marginBottom: 8,
 	},
 })
 
