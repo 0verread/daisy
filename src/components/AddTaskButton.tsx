@@ -9,5 +9,7 @@ export default function AddTaskButton(){
   )
 }
 const addTaskButtonStyles = StyleSheet.create({
-  
+ container: {
+  flex: 1
+ } 
 })
