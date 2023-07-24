@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 // components
 import Header from './src/components/Header';
+import AddTaskButton from './src/components/AddTaskButton';
 
 // screens
 import ZeroTasks from './src/screens/ZeroTasks';
@@ -12,6 +13,7 @@ export default function App() {
     <>
       <Header />
       <Tasks></Tasks>
+      <AddTaskButton />
     </>
 
   );

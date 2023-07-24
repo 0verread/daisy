@@ -7,9 +7,13 @@ type TaskProps = {
   active: true
 }
 
+const markCompleteTask = (taskId: number) => {
+	// mark task status "done"
+}
+
 const TaskItem = (tasks: any) => {
   return(
-		<TouchableOpacity>
+		<TouchableOpacity key={tasks.item._id} onPress={() => markCompleteTask(tasks.item._id)}>
     	<View style={taskItemStyles.todoContainer}>
 				<Text>{tasks.item.name}</Text>
     	</View>

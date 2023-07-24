@@ -3,13 +3,20 @@ import { View, Text, StyleSheet, Button } from "react-native";
 
 export default function AddTaskButton(){
   return(
-    <View>
+    <View style={addTaskButtonStyles.container}>
       <Button title="add"/>
     </View>
   )
 }
 const addTaskButtonStyles = StyleSheet.create({
  container: {
-  flex: 1
+  // flexDirection: "row",
+  position: 'absolute',
+  bottom: 60,
+  width: '100%',
+  flexDirection: 'row',
+  justifyContent: 'space-around',
+  alignItems: 'center'
+
  } 
 })
