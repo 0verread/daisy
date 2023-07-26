@@ -23,12 +23,12 @@ const addTaskButtonStyles = StyleSheet.create({
   width: '100%',
   flexDirection: 'row',
   justifyContent: 'space-around',
-  alignItems: 'center'
+  alignItems: 'center',
  },
  addTaskWrapper: {
   paddingVertical: 15,
   paddingHorizontal: 15,
-  backgroundColor: '#FFF',
+  backgroundColor: '#000',
   borderRadius: 60,
   borderColor: '#C0C0C0',
   borderWidth: 1,
@@ -37,6 +37,7 @@ const addTaskButtonStyles = StyleSheet.create({
  },
  addTaskText: {
   fontSize: 16,
-  fontWeight: "600"
+  fontWeight: "600",
+  color: "#FFF"
  }
 })
