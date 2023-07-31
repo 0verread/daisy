@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { View, Text, StyleSheet, Button, TouchableOpacity } from "react-native";
 
 const handleAddTaskButton = () => {
@@ -6,6 +6,9 @@ const handleAddTaskButton = () => {
 }
 
 export default function AddTaskButton(){
+
+  const snapPoint = ["40%"];
+
   return(
       <View style={addTaskButtonStyles.container}>
         <TouchableOpacity onPress={() => handleAddTaskButton()}>
