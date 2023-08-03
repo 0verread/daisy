@@ -1,5 +1,7 @@
 # daisy
-a minimalistic daily task schedular
+a minimalistic daily task schedular 
+
+React Native
 
 
 
